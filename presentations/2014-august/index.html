@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>ColdFusion Brisbane 2014</title>
+
+		<meta name="description" content="ColdFusion Brisbane Welcome Presentation">
+		<meta name="author" content="Gareth Edwards">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="../reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="css/cfbrisbane.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="../reveal/lib/css/zenburn.css">
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section data-background="#25424F" data-background-transition="slide">
+					<a href="http://twitter.com/cfbrisbane" target="_blank">
+						<img src="img/cf-logo.png" width="200" border="0" />
+					</a>
+					<h3 style="color: #E0F0FE;">Brisbane</h3>
+				</section>
+
+				<section>
+					<a href="http://twitter.com/cfbrisbane" target="_blank">
+						<img src="img/twitter.png" width="250" height="250" border="0" />
+					</a>
+					<h3>@cfbrisbane</h3>
+				</section>
+
+				<section>
+					<a href="http://www.meetup.com/brisbane-coldfusion/" target="_blank">
+						<img src="img/meetup.png" width="250" border="0" />
+					</a>
+
+					<h4><a href="http://www.meetup.com/brisbane-coldfusion/">http://www.meetup.com/brisbane-coldfusion/</a></h4>
+				</section>
+
+				<section>
+					<a href="http://tassweb.com.au" target="_blank">
+						<img src="img/tass.png" width="400" border="0" />
+					</a>
+					<h4><a href="http://tassweb.com.au">http://tassweb.com.au/</a></h4>
+				</section>
+
+				<section>
+					<a href="https://github.com/cfbrisbane/" target="_blank">
+						<img src="img/github.svg" width="300" border="0" />
+					</a>
+					<h4><a href="https://github.com/cfbrisbane/">https://github.com/cfbrisbane/</a></h4>
+				</section>
+
+				<section>
+					<section>
+						<h2>Security</h2>
+						<p>Stuff you may not have thought about</p>
+					</section>
+					<section>
+						<h3>Session Rotation</h3>
+						<p>Perform Cookie rotation on User Login</p>
+						<p>Function: SessionRotate()</p>
+					</section>
+					<section>
+						<h3>HTML / Script</h3>
+						<p>Encode displayed ( and / or stored ) "&lt; &gt; &amp;" characters</p>
+						<p>Filter displayed URL or FORM properties</p>
+					</section>
+					<section>
+						<h3>Form Submission</h3>
+						<p>Generate Single use tokens</p>
+					</section>
+					<section>
+						<h3>SQL Injection</h3>
+						<p>Use &lt;cfqueryparam /&gt;</p>
+					</section>
+					<section>
+						<h3>Directory Traversal</h3>
+						<p>Don't &lt;cfinclude template='D:\tmp\#URL.myFilePath#' /&gt;</p>
+					</section>
+					<section>
+						<p>For further information research OWASP top 10</p>
+						<p><a href="https://www.owasp.org/">https://www.owasp.org/</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Events</h2>
+					</section>
+					<section>
+						<h3>CampJS IV</h3>
+						<p>Oct 31—Nov 3 2014 Springbrook, Australia</p>
+						<p><a href="http://campjs.com/">http://campjs.com/</a></p>
+					</section>
+					<section>
+						<h3>Web Directions</h3>
+						<p>Oct. 30—31 2014 Sydney, Australia</p>
+						<p><a href="http://www.webdirections.org/wds14/">http://www.webdirections.org/wds14/</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>News</h2>
+					</section>
+					<section>
+						<h3>ColdFusion 11</h3>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>HTML Resources</h2>
+					</section>
+					<section><a href="http://www.webplatform.org/" target="_blank">http://www.webplatform.org/</a><img src="img/webplatform.png" /></section>
+					<section><a href="http://webplatformtools.org/" target="_blank">http://webplatformtools.org/</a><img src="img/webplatformtools.png" /></section>
+					<section><a href="http://edge.adobe.com/" target="_blank">http://edge.adobe.com/</a><img src="img/adobeedge.png" /></section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				rollingLinks: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: '../reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
