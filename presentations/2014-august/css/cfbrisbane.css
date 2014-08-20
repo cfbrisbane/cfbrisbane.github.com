@@ -17,6 +17,7 @@ body {
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none; }
 
+
 /*********************************************
  * HEADERS
  *********************************************/
@@ -167,3 +168,13 @@ border-bottom-color: #333; }
 
 .reveal .controls div.navigate-down.enabled:hover {
 border-top-color: #333; }
+
+.reveal pre {
+  font-size: 22px;
+  width: 88%;
+  box-shadow: none;
+} 
+
+.reveal pre code {
+  padding: 14px 20px;
+}

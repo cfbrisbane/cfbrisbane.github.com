@@ -47,7 +47,6 @@
 					<a href="http://www.meetup.com/brisbane-coldfusion/" target="_blank">
 						<img src="img/meetup.png" width="250" border="0" />
 					</a>
-
 					<h4><a href="http://www.meetup.com/brisbane-coldfusion/">http://www.meetup.com/brisbane-coldfusion/</a></h4>
 				</section>
 
@@ -93,8 +92,237 @@
 						<p>Don't &lt;cfinclude template='D:\tmp\#URL.myFilePath#' /&gt;</p>
 					</section>
 					<section>
+						<h3>Say what?</h3>
+						<p>Don't be ashamed to say you don't know security</p>
+						<p>Think about hiring an external consultant</p>
+						<p>Big companies get it wrong too</p>
+					</section>
+					<section>
 						<p>For further information research OWASP top 10</p>
 						<p><a href="https://www.owasp.org/">https://www.owasp.org/</a></p>
+					</section>
+					<section>
+						<p>Additional Resources</p>
+						<p><a href="http://portcullis.riaforge.org">http://portcullis.riaforge.org</a></p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>CFChart</h2>
+					</section>
+					<section>
+						<h3>ColdFusion 11</h3>
+						<p>Replaces charting with new Library</p>
+					</section>
+					<section>
+						<h3>Zingchart</h3>
+						<p><a href="http://zingchart.com/">http://zingchart.com/</a></p>
+					</section>
+					<section>
+						<h3>Style</h3>
+						<p>Use style properties and JSON content to customize styles</p>
+						<p><a href="http://www.zingchart.com/docs/json-attributes-syntax/">http://www.zingchart.com/docs/json-attributes-syntax/</a></p>
+					</section>
+
+					<section data-background="#3F3F3F" data-background-transition="slide">
+					<pre><code class="javascript" data-trim contenteditable style="max-height: 600px; font-size: 16px; line-height: 16px;">
+{"graphset":[
+    {
+        "type":"bar",
+        "background-color":"#FFFFFF",
+        "border-width":"0px",
+        "title":{
+            "font-color":"#000",
+            "font-size":"12px",
+            "background-color":"none",
+            "margin-top":"4px",
+            "wrap-text":1
+        },
+        "scale-x":{
+            "max-labels":22,
+            "line-width":1,
+            "line-color":"#000000",
+            "line-gap-size":0,
+            "guide":{
+                "line-width":0
+            },
+            "tick":{
+                "size":4,
+                "line-gap-size":0,
+                "line-width":1,
+                "line-color":"#000000"
+            }
+        },
+        "scale-y":{
+            "max-labels":20,
+            "line-width":1,
+            "line-color":"#000000",
+            "line-gap-size":0,
+            "tick":{
+                "size":4,
+                "line-gap-size":0,
+                "line-width":1,
+                "line-color":"#000000"
+            }
+        },
+        "legend":{
+            "layout":"x4",
+            "border-width":"0px",
+            "background-color":"#FFF",
+            "alpha":0,
+            "shadow":0,
+            "position":"50% -1%",
+            "border-radius":5,
+            "item":{
+                "marker-style":"square",
+                "border-width":0,
+                "margin-right":6,
+                "font-size":12
+            }
+        },
+        "tooltip":{
+            "text":"%t<br>%v",
+            "shadow":0,
+            "background-color":"#ffffff",
+            "border-color":"#000000",
+            "border-width":"1px",
+            "text-align":"left",
+            "font-color":"#000000"
+        },
+        "plotarea":{
+            "margin-top":"50px",
+            "margin-bottom":"40px",
+            "margin-left":"45px",
+            "margin-right":"20px",
+            "shadow":0
+        },
+        "plot":{
+            "value-box":{
+                "visible":false
+            },
+            "highlight":true,
+            "border-width":0,
+            "shadow":0
+        }
+    }
+]
+}
+					</code></pre>
+					</section>
+					<section>
+						<h3>Implementation</h3>
+						<p>Show Legend ??</p>
+						<p>ColdFusion 11 installs are different ??</p>
+						<p>Look crap out of the box</p>
+						<p>3D isn't great</p>
+						<p>Documentation isn't great</p>
+						<p>They don't work sometimes</p>
+					</section>
+
+					<section>
+						<p>Example 1. ColdFusion 9 / 10 Default</p>
+						<img src="img/cfchart/student-summary-cf9.png" />
+					</section>
+
+					<section>
+						<p>Example 1. ColdFusion 11 Default</p>
+						<img src="img/cfchart/student-summary-cf11-default.png" />
+					</section>
+
+					<section>
+						<p>Example 1. ColdFusion 11 Styled ( Server 1 )</p>
+						<img src="img/cfchart/student-summary-cf11.png" />
+					</section>
+					
+					<section>
+						<p>Example 1. ColdFusion 11 Styled ( Server 2 )</p>
+						<img src="img/cfchart/student-summary-cf11-remote.png" />
+					</section>
+
+					<section>
+						<p>Example 2. ColdFusion 11 Styled ( Server 1 )</p>
+						<img src="img/cfchart/gl-summary-cf11.png" />
+					</section>
+
+					<section>
+						<p>Example 2. ColdFusion 11 Styled ( Server 2 )</p>
+						<img src="img/cfchart/gl-summary-cf11-remote.jpg" />
+					</section>
+
+					<section>
+						<p>Example 3. ColdFusion 9 / 10 Default</p>
+						<img src="img/cfchart/parent-summary-cf9.png" />
+					</section>
+
+					<section>
+						<p>Example 3. ColdFusion 11 Styled ( Server 1 )</p>
+						<img src="img/cfchart/parent-summary-cf11.png" />
+					</section>
+					
+					<section>
+						<h3>Alternatives</h3>
+						<p>JavaScript Charting Libraries</p>
+						<p>D3.js / NVD3.js</p>
+					</section>
+
+					<section>
+						<p>Inhouse Dashboard D3 / NVD3</p>
+						<img src="img/cfchart/ims-dashboard-nvd3.png" />
+					</section>
+
+					<section>
+						<p>Example 1. D3 / NVD3</p>
+						<img src="img/cfchart/student-summary-nvd3.png" />
+					</section>
+
+					<section>
+						<p>Example 2. D3 / NVD3</p>
+						<img src="img/cfchart/gl-summary-nvd3.png" />
+					</section>
+
+					<section>
+						<p>Example 3. D3 / NVD3</p>
+						<img src="img/cfchart/parent-summary-nvd3.png" />
+					</section>
+
+					<section>
+						<h3>Server Side</h3>
+						<p>What about server side rendering?</p>
+						<p>Some thoughts</p>
+						<p>&lt;cfhtmltopdf /&gt;</p>
+						<p>PhantomJS</p>
+						<p>No transition "Hack"</p>
+					</section>
+
+					<section>
+
+						<pre><code class="javascript" data-trim contenteditable style="padding: 10px 20px;">
+//if ( window._phantom ) {
+  var now = Date.now;
+  Date.now = function() { return Infinity; };
+  d3.timer.flush();
+  Date.now = now;
+//}
+					</code></pre>
+
+						<code>
+							
+						</code>
+						<p><a href="http://stackoverflow.com/questions/14443724/disabling-all-d3-animations-for-testing">http://stackoverflow.com/questions/14443724/disabling-all-d3-animations-for-testing</a></p>
+					</section>
+					<section contenteditable="true">
+						<h3>ColdFusion</h3>
+						<p>&lt;cfchart /&gt; another "don't use" to add to the list</p>
+						<p>&lt;cfform /&gt;</p>
+					</section>
+					<section>
+						<h3>Links / Resources</h3>
+						<p><a href="http://zingchart.com/">http://zingchart.com/</a></p>
+						<p><a href="http://www.zingchart.com/builder/">http://www.zingchart.com/builder/</a></p>
+						<p><a href="http://nvd3.org/">http://nvd3.org/</a></p>
+						<p><a href="http://d3js.org/">http://d3js.org/</a></p>
+						<p><a href="http://phantomjs.org/">http://phantomjs.org/</a></p>
 					</section>
 				</section>
 
@@ -122,14 +350,14 @@
 						<h3>ColdFusion 11</h3>
 					</section>
 				</section>
-				<section>
+				<!-- <section>
 					<section>
 						<h2>HTML Resources</h2>
 					</section>
 					<section><a href="http://www.webplatform.org/" target="_blank">http://www.webplatform.org/</a><img src="img/webplatform.png" /></section>
 					<section><a href="http://webplatformtools.org/" target="_blank">http://webplatformtools.org/</a><img src="img/webplatformtools.png" /></section>
 					<section><a href="http://edge.adobe.com/" target="_blank">http://edge.adobe.com/</a><img src="img/adobeedge.png" /></section>
-				</section>
+				</section> -->
 			</div>
 
 		</div>
